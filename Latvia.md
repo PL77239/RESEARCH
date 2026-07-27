@@ -48,3 +48,16 @@
 - Products: bags, belts, wallets, backpacks
 - Location: Kovarnu 33-11, Cesis
 - Listing source: https://www.exporthub.com/lakolina/ (no independent company website confirmed — verify before use)
+
+### SB Ādas Dizains (Sandra Birze)
+- Type: Manufacturer & trader of natural-leather goods (40+ years); accepts individual & **corporate/B2B orders** and personalized/branded items
+- Products: wallets/purses, card & key cases, passport covers, bags, folders, belts, corporate gifts
+- Location: Ormaņu 26, Riga LV-1002
+- Website: https://sbadasdizains.lv
+- Email: sb@sbadasdizains.lv
+- Phone: +371 29715308
+
+### Buduart
+- Type: Latvian leather-goods manufacturer / design brand (since 2009); own Riga workshop
+- Products: natural-leather bags, wallets and accessories
+- Website: https://www.buduart.lv

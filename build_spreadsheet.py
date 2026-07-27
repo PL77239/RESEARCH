@@ -23,10 +23,16 @@ ROWS = [
     ("Germany", "PICARD Lederwaren GmbH & Co. KG", "https://picard-fashion.com", "tf@picard-fashion.com"),
     ("Germany", "Braun Büffel (Braun GmbH & Co. KG)", "https://braun-bueffel.com", "info@braun-bueffel.com"),
     ("Germany", "Greenburry", "https://www.greenburry.de", ""),
+    ("Germany", "Esquire Lederwaren – Rupp & Ricker GmbH", "https://www.esquire-lederwaren.de", "info@esquire-lederwaren.de"),
+    ("Germany", "MB Lederwaren-Importe GmbH", "https://www.mb-lederwaren.de", "info@mb-lederwaren.de"),
+    ("Germany", "LM-International (Europa) GmbH (Rimbaldi / Woodland)", "https://lmi.de", ""),
+    ("Germany", "Koffer-Zentrale.de (direct importer)", "https://koffer-zentrale.de", ""),
 
     # --- Lithuania ---
     ("Lithuania", "UAB Sominta", "https://sominta.com", "info@sominta.lt"),
     ("Lithuania", "UAB Vilga", "http://www.vilga.lt", "info@vilga.lt"),
+    ("Lithuania", "ANIS, UAB", "https://www.anis.lt", "info@anis.lt"),
+    ("Lithuania", "VIKTODA, UAB", "http://www.viktoda.lt", ""),
     ("Lithuania", "UAB Arenalis (leather materials)", "https://www.leather.lt", ""),
     ("Lithuania", "Baltijos odos, MB / Baltic Leather Supply (leather materials)", "", ""),
     ("Lithuania", "Revaris (leather materials)", "https://www.revaris.lt", ""),
@@ -37,11 +43,16 @@ ROWS = [
     ("Latvia", "SIA Velplev", "https://www.velplev.lv", "velplev@inbox.lv"),
     ("Latvia", "Tailor Riga (SIA ALIAS-Z)", "https://www.tailorriga.lv", ""),
     ("Latvia", "Eric Lasko Production", "https://ericlasko.com", ""),
+    ("Latvia", "SB Ādas Dizains (Sandra Birze)", "https://sbadasdizains.lv", "sb@sbadasdizains.lv"),
+    ("Latvia", "Buduart", "https://www.buduart.lv", ""),
     ("Latvia", "Lakolina (directory listing - verify)", "https://www.exporthub.com/lakolina/", ""),
 
     # --- Estonia ---
+    ("Estonia", "Gasell AS", "https://gasell.ee", "gasell@gasell.ee"),
     ("Estonia", "Nabo Nahktooted OÜ (Nokian Nahkatuote group)", "https://nokiannahkatuote.fi", "nabo@nahkatuote.inet.fi"),
     ("Estonia", "Bagy OÜ", "", "bettigehrke@gmail.com"),
+    ("Estonia", "Fashion House Eesti OÜ", "", "leif.karlsson@meridiangroup.eu"),
+    ("Estonia", "Stalcom OÜ", "https://stalcom.ee", ""),
     ("Estonia", "Leather World OÜ (leather materials / footwear)", "https://leather-world.co", "sales@leather-world.co"),
     ("Estonia", "Nakro OÜ (leather materials)", "https://www.nakro.ee", ""),
 
@@ -49,19 +60,24 @@ ROWS = [
     ("Czech Republic", "JUNI EXPORT-IMPORT s.r.o.", "https://www.juni.cz", "info@juni.cz"),
     ("Czech Republic", "PAUL BORDAS FASHION, s.r.o.", "https://www.paulbordas.cz", "info@paulbordas.cz"),
     ("Czech Republic", "UNIVARO – leather s.r.o. (UNIVARO Bags)", "https://www.univaro.cz", "info@univaro.cz"),
+    ("Czech Republic", "SEGALI", "https://www.segali.cz", "velkoobchod@segali.cz"),
+    ("Czech Republic", "Kožená galanterie GaToLi (Libor Tomáš)", "https://e-jola.webnode.cz", "libor.tomas@avonet.cz"),
     ("Czech Republic", "Gora (gora-velkoobchod)", "https://www.gora-velkoobchod.cz", ""),
 
     # --- Slovakia ---
-    ("Slovakia", "VEGA-LM (VegaLM)", "https://www.vegalm.sk", ""),
+    ("Slovakia", "VEGA-LM (VegaLM)", "https://www.vegalm.sk", "vega@vegalm.sk"),
+    ("Slovakia", "Arwel, s.r.o.", "https://www.arwel.sk", ""),
     ("Slovakia", "Max s.r.o. (MAX Original Leather / MaxLeather)", "https://maxleather.sk", "max@maxleather.sk"),
     ("Slovakia", "NICOLAUS LEATHER, s.r.o. (leather materials)", "https://nicolausleather.sk", ""),
 
     # --- Hungary ---
-    ("Hungary", "BI-KA Bőráru Kft.", "https://divatnagyker.hu/bi-ka-boraru-kft-bordiszmu-aru-importor-nagykereskedo/", ""),
-    ("Hungary", "Skin Bőrdíszmű", "", ""),
-    ("Hungary", "Synchrony LM (SLM Bőrdíszmű / Bőrdíszműnagyker)", "https://bordiszmunagyker.hu", ""),
+    ("Hungary", "BI-KA Bőráru Kft.", "https://bikabor.hu", "bikabor@bikabor.hu"),
+    ("Hungary", "Skin Bőrdíszmű Nagykereskedés (Skintaska)", "https://skintaska.hu", ""),
+    ("Hungary", "Synchrony LM (SLM Bőrdíszmű / Bőrdíszműnagyker)", "https://bordiszmunagyker.hu", "info@bordiszmunagyker.hu"),
     ("Hungary", "Kadro Bőrdíszmű Nagykereskedés", "https://kadro.hu", "info@kadro.hu"),
     ("Hungary", "Top Bag 2000 Kft. (Karen)", "https://karennagyker.hu", "info@karen.hu"),
+    ("Hungary", "Zolferex Kft. (Nettáska)", "https://www.nettaska.hu", "info@zolferex.hu"),
+    ("Hungary", "Farkas Bőrdíszmű", "https://farkasbordiszmu.hu", ""),
 
     # --- Denmark ---
     ("Denmark", "Axelsen & Søn ApS (Montana / Treats)", "https://axelsenson.com", "info@axelsenson.com"),
@@ -69,6 +85,8 @@ ROWS = [
     ("Denmark", "Adax A/S", "https://adax.dk", ""),
     ("Denmark", "Markberg", "https://markberg.dk", "salessupport@markberg.com"),
     ("Denmark", "Still Nordic", "https://stillnordic.dk", ""),
+    ("Denmark", "dbramante1928", "https://www.dbramante1928.com", ""),
+    ("Denmark", "Depeche (Depeche Denmark)", "https://www.depeche.dk", ""),
     ("Denmark", "SIPO Trading K/S (leather / skins)", "https://sipo.dk", ""),
     ("Denmark", "Sicadan (leather materials)", "https://www.sicadan.dk", "info@sicadan.dk"),
 ]

@@ -13,7 +13,13 @@
 - Products: women's handbags, wallets, bags, briefcases, cases, document holders, card cases, suitcases, belts, key rings; custom & hand-painted leather goods
 - Location: Vajanského 18, 031 01 Liptovský Mikuláš
 - Websites: https://www.kozeny.sk · https://www.vegalm.sk · B2B: https://www.kozena-galanteria.eu/spolupraca-b2b
-- Phone: +421 903 500 567
+- Email: vega@vegalm.sk
+- Phone: +421 903 500 567 · +421 903 274 471
+
+### Arwel, s.r.o.
+- Type: Manufacturer & **wholesaler** of leather accessories (since 1999, 20+ years); supplies wholesalers, shops, boutiques, e-shops, print/ad agencies; logo branding, dropshipping, product feed — no minimum-order limits
+- Products: women's wallets, handbags & backpacks, men's briefcases, bags & wallets, document cases, cosmetic cases, waiter's wallets, key cases
+- Website: https://www.arwel.sk (shop: https://www.kozenagalanteria.eu)
 
 ### Max s.r.o. (MAX Original Leather / MaxLeather)
 - Type: Wholesaler & retailer; **importer of Italian leather goods** (since 1992/1993). Wholesale offered in SK, CZ, Hungary, Poland and Italy.

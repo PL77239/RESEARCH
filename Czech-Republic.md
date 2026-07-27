@@ -35,3 +35,18 @@
 - Type: Wholesale portal for leather goods / accessories
 - Website: https://www.gora-velkoobchod.cz
 - Note: verify assortment & B2B terms directly.
+
+### SEGALI
+- Type: Czech leather-goods manufacturer with **wholesale** program (sells to leather-goods retailers, boutiques, e-shops); private label / logo production available
+- Products: wallets/purses, handbags, briefcases, small leather goods
+- Website: https://www.segali.cz (wholesale: /stranka/velkoobchodni-zastoupeni)
+- Email: velkoobchod@segali.cz · office@segali.cz (custom production)
+- Phone: +420 775 613 613
+
+### Kožená galanterie GaToLi (Libor Tomáš)
+- Type: **Wholesale** of leather goods (registration + trade licence required for wholesale pricing); also distributes the Czech LAGEN brand
+- Products: men's & women's wallets, handbags, men's bags & briefcases, document cases, key rings
+- Location: tř. Tomáše Bati 1677, 765 02 Otrokovice
+- Website: https://e-jola.webnode.cz
+- Email: libor.tomas@avonet.cz
+- Phone: +420 702 022 338

@@ -16,11 +16,32 @@
 - Email: nabo@nahkatuote.inet.fi
 - Phone: +372 489 6467
 
+### Gasell AS
+- Type: **Wholesaler, importer (maaletooja) & designer** of bags, suitcases and accessories; also logo/corporate-gift orders
+- Products: handbags, shoulder/travel/evening/school/sport bags, backpacks, briefcases, suitcases, laptop bags, wallets, card holders, belts, umbrellas (leather, textile, PU)
+- Location: Pärnu mnt 130, Tallinn 11317
+- Website: https://gasell.ee
+- Email: gasell@gasell.ee
+- Phone: +372 6 607 000
+
 ### Bagy OÜ
 - Type: Wholesale agent/intermediary for textiles, clothing, footwear and **leather goods** (EMTAK 46161), Tallinn (since 2006)
 - Location: Pärnu mnt 110-48, Kesklinna, Tallinn 11313
 - Email: bettigehrke@gmail.com
 - Phone: +372 56654499
+
+### Fashion House Eesti OÜ
+- Type: Wholesale agent/intermediary for textiles, clothing, footwear and **leather goods** (EMTAK 46161), Tallinn (since 2000)
+- Location: Uus-Sadama tn 21, Kesklinna, Tallinn 10120
+- Email: leif.karlsson@meridiangroup.eu
+- Phone: +358 40 744 4344
+
+### Stalcom OÜ
+- Type: Manufacturer of custom/personalized leather goods with **wholesale pricing (from 5 pcs)** for corporate clients
+- Products: wallets, belts, document/laptop cases, backpacks, portfolios, corporate leather gifts (with logo printing)
+- Location: Suur-Sõjamäe 48D, Tallinn
+- Website: https://stalcom.ee
+- Phone: +372 55965671
 
 ---
 

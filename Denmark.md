@@ -41,6 +41,16 @@
 - Products: work bags, weekend bags, crossbodies, men's & women's leather bag collections
 - Website: https://stillnordic.dk
 
+### dbramante1928
+- Type: Danish company (Copenhagen) designing & wholesaling leather goods and device cases; B2B/wholesale to retailers
+- Products: leather phone/laptop/tablet cases & sleeves, bags, small leather goods
+- Website: https://www.dbramante1928.com
+
+### Depeche (Depeche Denmark)
+- Type: Danish leather bag & accessories brand distributed wholesale to retailers
+- Products: leather handbags, crossbody bags, clutches, belts, small leather goods
+- Website: https://www.depeche.dk
+
 ---
 
 ## Related — leather materials / skins wholesale (not finished bags)

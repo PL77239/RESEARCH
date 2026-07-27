@@ -24,6 +24,20 @@
 - Email: info@vilga.lt · marketing@vilga.lt
 - Phone: +370 5 260 02 08
 
+### ANIS, UAB
+- Type: **Wholesale & retail** trade of bags and accessories (since 1993); distributes several world brands in Lithuania (also operates BAGS & MORE / BAGS 4 YOU stores)
+- Products: handbags, backpacks, travel bags, wallets, briefcases, suitcases, umbrellas, gloves and accessories
+- Location: Jurbarko g. 2, Kaunas LT-47183
+- Website: https://www.anis.lt
+- Email: info@anis.lt
+- Phone: +370 37 362770
+
+### VIKTODA, UAB
+- Type: Manufacturer & trader of leather goods (since 1998)
+- Products: leather handbags, belts and leather haberdashery
+- Location: Sodų g. 26, Kaunas LT-45264
+- Website: http://www.viktoda.lt
+
 ---
 
 ## Related — leather materials / components (not finished bags)

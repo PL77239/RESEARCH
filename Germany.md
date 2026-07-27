@@ -85,6 +85,32 @@
 - Products: leather bags, backpacks, wallets, accessories
 - Website: https://www.greenburry.de (dealer inquiries: https://www.greenburry.de/haendleranfragen)
 
+### Esquire Lederwaren – Rupp & Ricker GmbH
+- Type: Manufacturer of leather accessories (since 1951) with dealer/B2B area; supplies 500+ specialist shops & department stores in DE/AT/CH and export markets
+- Products: wallets/purses, business articles, belts, small leather goods
+- Location: Gutenbergstrasse 4, 63110 Rodgau
+- Website: https://www.esquire-lederwaren.de
+- Email: info@esquire-lederwaren.de
+- Phone: +49 6106 6945 0
+
+### MB Lederwaren-Importe GmbH
+- Type: Wholesale importer (& retailer) of leather goods, luggage and accessories
+- Products: bags, luggage, small leather goods, accessories
+- Location: Harkortstraße 15, 59379 Selm
+- Website: https://www.mb-lederwaren.de
+- Email: info@mb-lederwaren.de
+- Phone: +49 2592 9742-0
+
+### LM-International (Europa) GmbH — lmi.de
+- Type: Importer & wholesaler of leather goods (own import; brands Rimbaldi®, Woodland®)
+- Products: wallets/purses, small leather goods, card/passport cases (min. order €100 DE / €250 EU)
+- Website: https://lmi.de
+
+### Koffer-Zentrale.de
+- Type: Direct importer / B2B wholesaler (dealers only) of luggage & bags
+- Products: suitcases, suitcase sets, backpacks, hand & shoulder bags
+- Website: https://koffer-zentrale.de
+
 ---
 
 ## Related — leather materials / components (not finished bags)
