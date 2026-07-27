@@ -7,6 +7,14 @@ Central/Northern European countries **excluding Poland**.
 Retail-only businesses and pure consumer online shops are intentionally excluded. Each company entry lists a
 **website** and, where available, an **email address** (plus phone/address where found).
 
+## Fit verification (who can buy finished Indian leather goods)
+
+See **[VERIFICATION.md](VERIFICATION.md)** for a classification of every company by whether it is
+a genuine **importer / distributor / wholesaler** that buys finished leather goods for resale
+(your target buyers), vs. an **own-production / own-design brand** (OEM / private-label only), vs.
+a **materials/hides supplier or artisan** (not a buyer). The spreadsheet has a colour-coded "Fit"
+column and a separate **"Priority targets"** tab listing only the strong-fit importers/wholesalers.
+
 ## Countries (one file each)
 
 - [Germany](Germany.md)

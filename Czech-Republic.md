@@ -36,6 +36,12 @@
 - Website: https://www.gora-velkoobchod.cz
 - Note: verify assortment & B2B terms directly.
 
+### Karoly (Letohrad)
+- Type: **Wholesaler & importer** of leather goods; also arranges import of leather products and export assistance
+- Products: wallets, belts, cases, key rings, bags and handbags
+- Location: Letohrad (Červená), Czech Republic
+- Website/profile: https://www.firmy.cz/detail/12856470-karoly-letohrad-cervena.html
+
 ### SEGALI
 - Type: Czech leather-goods manufacturer with **wholesale** program (sells to leather-goods retailers, boutiques, e-shops); private label / logo production available
 - Products: wallets/purses, handbags, briefcases, small leather goods
