@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Renders slides.html to output/slide-XX.png (1080x1350), output/poland-importers-carousel.pdf
-# and transparent-background PNGs in output/transparent/ (for compositing over video).
+# Renders slides.html to output/slide-XX.png (1080x1350) and output/poland-importers-carousel.pdf.
 set -euo pipefail
 
 cd "$(dirname "$0")"
@@ -29,18 +28,13 @@ run_chrome() {
   echo "rendered $out"
 }
 
-mkdir -p output/transparent
-rm -f output/*.png output/*.pdf output/transparent/*.png
+mkdir -p output
+rm -f output/*.png output/*.pdf
 
 for i in $(seq 1 "$COUNT"); do
   out=$(printf "output/slide-%02d.png" "$i")
   run_chrome "$out" --window-size=1080,1350 --screenshot="$out" "$SRC#$i"
-  out=$(printf "output/transparent/slide-%02d.png" "$i")
-  run_chrome "$out" --window-size=1080,1350 --default-background-color=00000000 --screenshot="$out" "$SRC#${i}t"
 done
-
-out=output/transparent/slide-06-logos-only.png
-run_chrome "$out" --window-size=1080,1350 --default-background-color=00000000 --screenshot="$out" "$SRC#6c"
 
 run_chrome output/poland-importers-carousel.pdf --no-pdf-header-footer \
   --print-to-pdf=output/poland-importers-carousel.pdf "$SRC"
