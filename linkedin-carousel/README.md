@@ -5,6 +5,8 @@ B2B carousel presenting the company's core services. Format: 7 slides, 1080×135
 **Upload to LinkedIn:** create a post → *Add a document* → `output/poland-importers-carousel.pdf`.
 The individual `output/slide-XX.png` files can be used as an image post or for review.
 
+**Transparent versions for video compositing:** `output/transparent/slide-XX.png` are the same slides as RGBA PNGs, with the slide background removed. Photos, text, the map, logos and logo cards are kept. `output/transparent/slide-06-logos-only.png` also drops the white logo cards, leaving only the logos and captions. Most of the text on light slides is dark navy, so it needs a light or blurred area of the video behind it.
+
 ## Slides
 
 | # | Content | Photo |

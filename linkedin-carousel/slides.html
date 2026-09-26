@@ -38,6 +38,9 @@
   @media print { .slide { margin: 0; } html, body { background: #fff; } }
   body.single .slide { display: none; margin: 0; }
   body.single .slide.active { display: block; }
+  html.transparent, html.transparent body, html.transparent .slide { background: transparent !important; }
+  html.transparent .cover .dots { display: none; }
+  html.no-cards .logo-card { background: transparent; box-shadow: none; }
 
   h1, h2, h3, .num, .stat b { font-family: "Montserrat", sans-serif; }
 
@@ -352,7 +355,11 @@
 </section>
 
 <script>
-  const n = parseInt(location.hash.slice(1), 10);
+  // #N renders slide N alone; suffix "t" = transparent background, "c" = also drop the logo cards.
+  const hash = location.hash.slice(1);
+  const n = parseInt(hash, 10);
+  if (/[tc]/.test(hash)) document.documentElement.classList.add("transparent");
+  if (hash.includes("c")) document.documentElement.classList.add("no-cards");
   if (n) {
     document.body.classList.add("single");
     document.querySelectorAll(".slide")[n - 1].classList.add("active");
