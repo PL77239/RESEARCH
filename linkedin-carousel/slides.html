@@ -160,19 +160,23 @@
   }
   .service .fact b { color: var(--navy-dark); font-weight: 700; }
 
-  /* ---------- 6. projects ---------- */
+  /* ---------- 6. trade fairs ---------- */
   .projects { background: var(--paper); }
-  .projects .inner { position: absolute; top: 96px; left: 64px; right: 64px; }
-  .projects h2 { font-size: 64px; line-height: 1.08; font-weight: 800; color: var(--navy-dark); margin: 22px 0 40px; }
-  .grid { display: grid; grid-template-columns: 1.15fr 1fr; grid-template-rows: 380px 380px; gap: 20px; }
-  .tile { position: relative; border-radius: 22px; overflow: hidden; background-size: cover; background-position: center; }
-  .tile.tall { grid-row: span 2; }
-  .tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, rgba(5,20,49,.9) 100%); }
-  .tile .label { position: absolute; left: 24px; right: 24px; bottom: 22px; z-index: 1; color: #fff; }
-  .tile .label small { display: block; font-size: 18px; font-weight: 700; letter-spacing: .12em; color: var(--orange); margin-bottom: 6px; }
-  .tile .label strong { display: block; font-family: "Montserrat", sans-serif; font-size: 27px; line-height: 1.2; font-weight: 700; }
-  .projects .more { margin-top: 34px; font-size: 26px; line-height: 1.45; color: var(--muted); }
-  .projects .more b { color: var(--navy-dark); }
+  .projects .inner { position: absolute; top: 90px; left: 64px; right: 64px; }
+  .projects h2 { font-size: 64px; line-height: 1.08; font-weight: 800; color: var(--navy-dark); margin: 22px 0 16px; }
+  .projects .lead { font-size: 28px; line-height: 1.45; color: var(--muted); margin-bottom: 38px; }
+  .logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .logo-card {
+    height: 196px; background: #fff; border-radius: 22px;
+    box-shadow: 0 12px 34px rgba(8,31,69,.08);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  }
+  .logo-card .mark { height: 110px; width: 340px; display: flex; align-items: center; justify-content: center; }
+  .logo-card img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .logo-card span {
+    font-size: 17px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+  }
+  .logo-card span::before { content: ""; display: inline-block; width: 22px; height: 3px; margin: 0 12px 5px 0; background: var(--accent); border-radius: 2px; }
 
   /* ---------- 7. CTA ---------- */
   .cta {
@@ -307,23 +311,22 @@
   <div class="footer"><span class="page">05 / 07</span><span class="swipe">Swipe</span></div>
 </section>
 
-<!-- 6 · RECENT PROJECTS -->
+<!-- 6 · TRADE FAIRS -->
 <section class="slide projects">
   <div class="inner">
     <div class="accent-bar"></div>
     <h2>Recent projects</h2>
-    <div class="grid">
-      <div class="tile tall" style="background-image:url('assets/photos/india-footwear-show-opening.jpg'); background-position: 38% center;">
-        <div class="label"><small>WARSAW · 2025</small><strong>India Footwear &amp; Leather Products Show</strong></div>
-      </div>
-      <div class="tile" style="background-image:url('assets/photos/trade-mission-egypt-group.jpg'); background-position: center 60%;">
-        <div class="label"><small>WARSAW · 2025</small><strong>Trade mission of Egyptian apparel producers</strong></div>
-      </div>
-      <div class="tile" style="background-image:url('assets/photos/destination-africa-cairo.jpg'); background-position: center 30%;">
-        <div class="label"><small>CAIRO · 2025</small><strong>Polish buyers at Destination Africa</strong></div>
-      </div>
+    <p class="lead">Trade fairs we have recently worked on, across Europe and Asia.</p>
+    <div class="logos">
+      <div class="logo-card"><div class="mark"><img src="assets/logos/ifco.svg" alt="IFCO – Istanbul Fashion Connection" style="max-height:92px"></div><span>Istanbul · Turkey</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/texhibition.svg" alt="Texhibition Istanbul" style="max-height:66px"></div><span>Istanbul · Turkey</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/bharat-tex.png" alt="Bharat Tex" style="max-height:110px"></div><span>New Delhi · India</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/iigf.png" alt="India International Garment Fair (IGFA)" style="max-height:110px"></div><span>New Delhi · India</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/ailpa.png" alt="AILPA – All India Leather Products & Allied" style="max-height:92px"></div><span>Kolkata · India</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/ready-to-show.png" alt="Ready to Show" style="max-height:96px"></div><span>Milan · Italy</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/apparel-sourcing-tashkent.png" alt="Apparel Sourcing Tashkent" style="max-height:84px"></div><span>Tashkent · Uzbekistan</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/heimtextil-uzbekistan.png" alt="Heimtextil Uzbekistan" style="max-height:84px"></div><span>Tashkent · Uzbekistan</span></div>
     </div>
-    <p class="more">Also: <b>workshops</b> for foreign suppliers, <b>market research</b> and <b>consulting</b> on the Polish market.</p>
   </div>
   <div class="footer">
     <span class="brand"><img src="assets/logo.png" alt=""></span>

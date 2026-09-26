@@ -1,4 +1,4 @@
-# Poland-Importers.com – LinkedIn carousel (draft v1)
+# Poland-Importers.com – LinkedIn carousel (draft v2)
 
 B2B carousel presenting the company's core services. Format: 7 slides, 1080×1350 px (4:5, LinkedIn's recommended portrait size).
 
@@ -14,11 +14,28 @@ The individual `output/slide-XX.png` files can be used as an image post or for r
 | 3 | 01 · We organize trade missions | Egyptian apparel trade mission (AECE), Warsaw 2025 |
 | 4 | 02 · We find buyers for you | India Footwear & Leather Products Show, Warsaw 2025 |
 | 5 | 03 · We arrange B2B meetings | Business talks during the Egyptian trade mission |
-| 6 | Recent projects – India show, Egyptian mission, Destination Africa (Cairo) | 3 photos |
+| 6 | Recent projects – logo wall of 8 trade fairs (see below) | – |
 | 7 | CTA – website, e-mail, phone | – |
 
 All facts and photos come from poland-importers.com (service pages, *About*, *News*, media library).
-Spare photos for later iterations are in `assets/photos/` (show hall, Indian Embassy seminar).
+Spare photos for later iterations are in `assets/photos/` (show hall, ribbon cutting, Destination Africa, Indian Embassy seminar).
+
+### Trade fair logos (slide 6)
+
+All logos are in `assets/logos/` and were taken from the fairs' official websites. Colour logos keep their brand colours. Single-colour logos are recoloured to the carousel navy (`#081f45`) so the wall looks consistent.
+
+| Logo | Fair | Source |
+|------|------|--------|
+| `ifco.svg` | IFCO – Istanbul Fashion Connection, Turkey | ifco.com.tr |
+| `texhibition.svg` | Texhibition Istanbul, Turkey | texhibitionist.com |
+| `bharat-tex.png` | Bharat Tex 2026, New Delhi, India | bharat-tex.com |
+| `iigf.png` | India International Garment Fair (organised by IGFA), New Delhi | indiaapparelfair.com |
+| `ailpa.png` | AILPA – All India Leather Products & Allied Sourcing Fair, Kolkata | cropped from the AILPA banner on ilpaindia.org |
+| `ready-to-show.png` | Ready to Show, Milan, Italy | readytoshow.it (the "at mfj" edition suffix removed) |
+| `apparel-sourcing-tashkent.png` | Apparel Sourcing Tashkent, Uzbekistan | apparel-sourcing.uz |
+| `heimtextil-uzbekistan.png` | Heimtextil Uzbekistan, Tashkent | lettering captured from the heimtextil.uz homepage lockup (no standalone logo file is published) |
+
+Both Messe Frankfurt logos are shown without the "licensed by Messe Frankfurt Exhibition GmbH" line, so they stay legible at this size.
 
 ## Editing
 
@@ -50,5 +67,5 @@ Spare photos for later iterations are in `assets/photos/` (show hall, Indian Emb
 ## To confirm with the client
 
 - Contact details on slide 7: `md@poland-importers.com` (from their Destination Africa flyer) and `+48 601 080 490` (site header).
-- Whether the caption "Polish buyers at Destination Africa" is OK (based on the News entry "We brought buyers to Destination Africa").
+- Ideally, get official vector logos for AILPA and Heimtextil Uzbekistan from the organisers. The current files are cropped from their websites.
 - Whether a short animated version (MP4/GIF) is wanted in addition to the carousel.
