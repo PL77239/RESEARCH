@@ -82,6 +82,13 @@
     position: absolute; left: -17px; top: 470px; width: 1150px;
     -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
     mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+    opacity: .55; filter: saturate(.6) blur(.6px);
+  }
+  .cover .mist {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(620px 460px at 50% 72%, rgba(200,214,240,.16), transparent 72%),
+      linear-gradient(180deg, transparent 55%, rgba(5,20,49,.45) 100%);
   }
   .cover .text { position: absolute; top: 230px; left: 64px; right: 64px; }
   .cover h1 { font-size: 92px; line-height: 1.02; font-weight: 800; margin: 22px 0 26px; letter-spacing: -.01em; }
@@ -213,6 +220,7 @@
 <section class="slide cover dark">
   <div class="dots"></div>
   <img class="map" src="assets/poland-cee-map.svg" alt="">
+  <div class="mist"></div>
   <div class="logo-badge"><img src="assets/logo.png" alt="Poland-Importers.com"></div>
   <div class="pill">POLAND &amp; CEE</div>
   <div class="text">
