@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Poland-Importers.com – LinkedIn carousel</title>
+<style>
+  @font-face { font-family: "Montserrat"; src: url("assets/fonts/Montserrat.ttf") format("truetype"); font-weight: 100 900; }
+  @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf") format("truetype"); font-weight: 100 900; }
+
+  :root {
+    --navy: #0d4c9a;
+    --navy-dark: #081f45;
+    --navy-deep: #051431;
+    --orange: #f39200;
+    --red: #e53517;
+    --ink: #13213a;
+    --muted: #5b6b85;
+    --paper: #f5f7fb;
+    --accent: linear-gradient(90deg, var(--orange), var(--red));
+    --W: 1080px;
+    --H: 1350px;
+  }
+
+  @page { size: 1080px 1350px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #2a2f3a; }
+  body { font-family: "Inter", sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  .slide {
+    position: relative;
+    width: var(--W);
+    height: var(--H);
+    overflow: hidden;
+    margin: 0 auto 40px;
+    background: #fff;
+    break-after: page;
+  }
+  @media print { .slide { margin: 0; } html, body { background: #fff; } }
+  body.single .slide { display: none; margin: 0; }
+  body.single .slide.active { display: block; }
+
+  h1, h2, h3, .num, .stat b { font-family: "Montserrat", sans-serif; }
+
+  /* ---------- shared bits ---------- */
+  .logo-badge {
+    position: absolute; top: 56px; left: 64px;
+    background: #fff; border-radius: 18px; padding: 14px 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  }
+  .logo-badge img { display: block; height: 96px; }
+  .footer {
+    position: absolute; left: 64px; right: 64px; bottom: 48px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 22px; font-weight: 600; letter-spacing: .02em; color: var(--muted);
+  }
+  .footer .brand { display: flex; align-items: center; gap: 14px; }
+  .footer .brand img { height: 64px; }
+  .footer .page { font-variant-numeric: tabular-nums; }
+  .footer .swipe { color: var(--navy); display: flex; align-items: center; gap: 10px; }
+  .footer .swipe::after { content: "→"; font-size: 30px; color: var(--orange); }
+  .dark .footer { color: rgba(255,255,255,.7); }
+  .dark .footer .swipe { color: #fff; }
+  .accent-bar { width: 120px; height: 8px; border-radius: 4px; background: var(--accent); }
+  .kicker {
+    font-size: 24px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--orange);
+  }
+
+  /* ---------- 1. cover ---------- */
+  .cover {
+    background:
+      radial-gradient(900px 700px at 85% 70%, rgba(13,76,154,.55), transparent 70%),
+      linear-gradient(160deg, var(--navy-dark) 0%, var(--navy-deep) 100%);
+    color: #fff;
+  }
+  .cover .dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,.08) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+    mask-image: linear-gradient(180deg, #000 0%, transparent 60%);
+  }
+  .cover .map {
+    position: absolute; left: -17px; top: 470px; width: 1150px;
+    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
+    opacity: .55; filter: saturate(.6) blur(.6px);
+  }
+  .cover .mist {
+    position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(620px 460px at 50% 72%, rgba(200,214,240,.16), transparent 72%),
+      linear-gradient(180deg, transparent 55%, rgba(5,20,49,.45) 100%);
+  }
+  .cover .text { position: absolute; top: 230px; left: 64px; right: 64px; }
+  .cover h1 { font-size: 92px; line-height: 1.02; font-weight: 800; margin: 22px 0 26px; letter-spacing: -.01em; }
+  .cover h1 em { font-style: normal; background: var(--accent); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .cover .sub { font-size: 30px; line-height: 1.4; color: rgba(255,255,255,.82); max-width: 780px; }
+  .cover .pill {
+    position: absolute; right: 64px; top: 72px;
+    border: 2px solid rgba(255,255,255,.35); border-radius: 999px; padding: 12px 26px;
+    font-size: 22px; font-weight: 600; letter-spacing: .08em; color: rgba(255,255,255,.9);
+  }
+
+  /* ---------- 2. about ---------- */
+  .about { background: var(--paper); }
+  .about .inner { position: absolute; top: 90px; left: 64px; right: 64px; }
+  .about h2 { font-size: 64px; line-height: 1.1; font-weight: 800; color: var(--navy-dark); margin: 26px 0 28px; }
+  .about p.lead { font-size: 30px; line-height: 1.5; color: var(--muted); max-width: 900px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 46px 0 48px; }
+  .stat {
+    background: #fff; border-radius: 24px; padding: 34px 30px 30px;
+    box-shadow: 0 12px 34px rgba(8,31,69,.08); border-top: 8px solid var(--navy);
+  }
+  .stat:nth-child(2) { border-top-color: var(--orange); }
+  .stat:nth-child(3) { border-top-color: var(--red); }
+  .stat b { display: block; font-size: 84px; font-weight: 800; color: var(--navy-dark); line-height: 1; }
+  .stat span { display: block; margin-top: 14px; font-size: 25px; font-weight: 600; color: var(--muted); }
+  .about h3 { font-size: 24px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--navy); margin-bottom: 22px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 14px; }
+  .chips span {
+    font-size: 25px; font-weight: 600; color: var(--navy-dark);
+    background: #fff; border: 2px solid #d9e1ee; border-radius: 999px; padding: 12px 24px;
+  }
+  .partners {
+    margin-top: 40px; padding: 28px 34px; border-radius: 24px;
+    background: var(--navy-dark); color: #fff;
+  }
+  .partners h3 { color: var(--orange); margin-bottom: 14px; }
+  .partners p { font-size: 27px; line-height: 1.5; color: rgba(255,255,255,.88); }
+
+  /* ---------- 3–5. services ---------- */
+  .service .photo {
+    position: absolute; top: 0; left: 0; right: 0; height: 830px;
+    background-size: cover; background-position: center;
+  }
+  .service .photo::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(5,20,49,.55) 0%, rgba(5,20,49,0) 28%, rgba(5,20,49,0) 45%, rgba(5,20,49,.92) 100%);
+  }
+  .service .logo-badge { z-index: 2; }
+  .service .headline { position: absolute; left: 64px; right: 64px; top: 560px; z-index: 2; color: #fff; }
+  .service .num {
+    display: inline-block; font-size: 26px; font-weight: 800; letter-spacing: .14em;
+    padding: 10px 20px; border-radius: 10px; background: var(--accent); color: #fff; margin-bottom: 20px;
+  }
+  .service h2 { font-size: 78px; line-height: 1.02; font-weight: 800; letter-spacing: -.01em; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
+  .service .caption {
+    position: absolute; right: 64px; top: 72px; z-index: 2; max-width: 520px; text-align: right;
+    font-size: 19px; line-height: 1.35; font-weight: 500; color: rgba(255,255,255,.92);
+    text-shadow: 0 2px 10px rgba(0,0,0,.6);
+  }
+  .service .body { position: absolute; top: 830px; left: 0; right: 0; bottom: 0; padding: 50px 64px 0; }
+  .service ul { list-style: none; }
+  .service li {
+    position: relative; padding-left: 60px; margin-bottom: 24px;
+    font-size: 33px; line-height: 1.3; font-weight: 500; color: var(--ink);
+  }
+  .service li::before {
+    content: ""; position: absolute; left: 0; top: 5px; width: 36px; height: 36px; border-radius: 50%;
+    background: var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/22px no-repeat;
+  }
+  .service li b { font-weight: 700; color: var(--navy-dark); }
+  .service .fact {
+    position: absolute; left: 64px; right: 64px; bottom: 112px;
+    display: flex; align-items: center; gap: 18px;
+    padding: 20px 26px; border-radius: 16px; background: var(--paper); border-left: 8px solid var(--orange);
+    font-size: 26px; font-weight: 500; color: var(--muted);
+  }
+  .service .fact b { color: var(--navy-dark); font-weight: 700; }
+
+  /* ---------- 6. trade fairs ---------- */
+  .projects { background: var(--paper); }
+  .projects .inner { position: absolute; top: 90px; left: 64px; right: 64px; }
+  .projects h2 { font-size: 64px; line-height: 1.08; font-weight: 800; color: var(--navy-dark); margin: 22px 0 16px; }
+  .projects .lead { font-size: 28px; line-height: 1.45; color: var(--muted); margin-bottom: 38px; }
+  .logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .logo-card {
+    height: 196px; background: #fff; border-radius: 22px;
+    box-shadow: 0 12px 34px rgba(8,31,69,.08);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  }
+  .logo-card .mark { height: 110px; width: 340px; display: flex; align-items: center; justify-content: center; }
+  .logo-card img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .logo-card span {
+    font-size: 17px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+  }
+  .logo-card span::before { content: ""; display: inline-block; width: 22px; height: 3px; margin: 0 12px 5px 0; background: var(--accent); border-radius: 2px; }
+
+  /* ---------- 7. CTA ---------- */
+  .cta {
+    background:
+      radial-gradient(800px 600px at 15% 90%, rgba(243,146,0,.22), transparent 70%),
+      linear-gradient(160deg, var(--navy-dark) 0%, var(--navy-deep) 100%);
+    color: #fff;
+  }
+  .cta .map-bg {
+    position: absolute; right: -330px; top: 160px; width: 1100px; opacity: .22;
+    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 55%, transparent 100%);
+    mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 55%, transparent 100%);
+  }
+  .cta .inner { position: absolute; top: 330px; left: 64px; right: 64px; }
+  .cta h2 { font-size: 96px; line-height: 1.02; font-weight: 800; margin: 28px 0 30px; }
+  .cta h2 em { font-style: normal; background: var(--accent); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .cta p { font-size: 32px; line-height: 1.45; color: rgba(255,255,255,.82); max-width: 820px; }
+  .contact { margin-top: 72px; display: grid; gap: 22px; }
+  .contact div {
+    display: flex; align-items: center; gap: 24px;
+    background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 18px;
+    padding: 22px 28px; font-size: 34px; font-weight: 600;
+  }
+  .contact i {
+    flex: none; width: 56px; height: 56px; border-radius: 14px; background: var(--accent);
+    display: grid; place-items: center; font-style: normal; font-size: 28px;
+  }
+  .contact i svg { width: 30px; height: 30px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+</head>
+<body>
+
+<!-- 1 · COVER -->
+<section class="slide cover dark">
+  <div class="dots"></div>
+  <img class="map" src="assets/poland-cee-map.svg" alt="">
+  <div class="mist"></div>
+  <div class="logo-badge"><img src="assets/logo.png" alt="Poland-Importers.com"></div>
+  <div class="pill">POLAND &amp; CEE</div>
+  <div class="text">
+    <div class="kicker">Export to Poland</div>
+    <h1>Your gateway to <em>Polish buyers</em></h1>
+    <p class="sub">Trade missions, buyer matching and B2B meetings in Poland and Central &amp; Eastern Europe.</p>
+  </div>
+  <div class="footer"><span>poland-importers.com</span><span class="swipe">Swipe</span></div>
+</section>
+
+<!-- 2 · ABOUT -->
+<section class="slide about">
+  <div class="inner">
+    <div class="accent-bar"></div>
+    <h2>Your local partner on the Polish market</h2>
+    <p class="lead">We connect foreign producers, chambers of commerce and exporters’ associations with importers, wholesalers and retail chains across Poland and the CEE region.</p>
+    <div class="stats">
+      <div class="stat"><b>25+</b><span>years in trade</span></div>
+      <div class="stat"><b>40+</b><span>countries served</span></div>
+      <div class="stat"><b>500+</b><span>clients</span></div>
+    </div>
+    <h3>Industries we know best</h3>
+    <div class="chips">
+      <span>Fashion &amp; apparel</span><span>Leather &amp; footwear</span><span>Jewellery</span>
+      <span>Food &amp; agri-products</span><span>Cosmetics &amp; wellness</span><span>Home textiles &amp; décor</span>
+      <span>Raw materials</span><span>Machinery</span>
+    </div>
+    <div class="partners">
+      <h3>Partners from around the world</h3>
+      <p>Egypt · India · Turkey · Pakistan · Bangladesh · China · UAE · Morocco · Thailand · USA · Germany · France · UK and many more</p>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="brand"><img src="assets/logo.png" alt=""></span>
+    <span class="page">02 / 07</span>
+  </div>
+</section>
+
+<!-- 3 · TRADE MISSIONS -->
+<section class="slide service">
+  <div class="photo" style="background-image:url('assets/photos/trade-mission-egypt-group.jpg'); background-position: center 60%;"></div>
+  <div class="logo-badge"><img src="assets/logo.png" alt=""></div>
+  <div class="caption">Trade mission of Egyptian apparel producers<br>with AECE Egypt · Warsaw 2025</div>
+  <div class="headline">
+    <span class="num">01</span>
+    <h2>We organize<br>trade missions</h2>
+  </div>
+  <div class="body">
+    <ul>
+      <li><b>Industry-focused events</b> for groups of 15–25 exhibitors</li>
+      <li>Showroom, hotels and logistics <b>fully handled</b></li>
+      <li><b>Premium buyers invited</b> to match the products on display</li>
+    </ul>
+  </div>
+  <div class="fact"><b>6–8 weeks</b> from brief to a ready-to-run event</div>
+  <div class="footer"><span class="page">03 / 07</span><span class="swipe">Swipe</span></div>
+</section>
+
+<!-- 4 · FINDING BUYERS -->
+<section class="slide service">
+  <div class="photo" style="background-image:url('assets/photos/india-footwear-show-buyers.jpg'); background-position: center 40%;"></div>
+  <div class="logo-badge"><img src="assets/logo.png" alt=""></div>
+  <div class="caption">India Footwear &amp; Leather Products Show<br>Warsaw 2025</div>
+  <div class="headline">
+    <span class="num">02</span>
+    <h2>We find buyers<br>for you</h2>
+  </div>
+  <div class="body">
+    <ul>
+      <li><b>Verified data</b> on importers, wholesalers and retail chains</li>
+      <li>Buyers <b>shortlisted and matched</b> to your products</li>
+      <li>Full market development, <b>from first contact to orders</b></li>
+    </ul>
+  </div>
+  <div class="fact">Coverage: <b>Poland and the entire CEE region</b></div>
+  <div class="footer"><span class="page">04 / 07</span><span class="swipe">Swipe</span></div>
+</section>
+
+<!-- 5 · B2B MEETINGS -->
+<section class="slide service">
+  <div class="photo" style="background-image:url('assets/photos/trade-mission-egypt-talk.jpg'); background-position: center 35%;"></div>
+  <div class="logo-badge"><img src="assets/logo.png" alt=""></div>
+  <div class="caption">Business talks during a trade mission<br>Warsaw 2025</div>
+  <div class="headline">
+    <span class="num">03</span>
+    <h2>We arrange<br>B2B meetings</h2>
+  </div>
+  <div class="body">
+    <ul>
+      <li><b>Tailored agenda</b> with pre-qualified companies</li>
+      <li>Travel itinerary and logistics across <b>Poland &amp; CEE</b></li>
+      <li><b>Personal assistance</b> on site, if needed</li>
+    </ul>
+  </div>
+  <div class="fact"><b>3–4 weeks</b> to prepare a complete meeting itinerary</div>
+  <div class="footer"><span class="page">05 / 07</span><span class="swipe">Swipe</span></div>
+</section>
+
+<!-- 6 · TRADE FAIRS -->
+<section class="slide projects">
+  <div class="inner">
+    <div class="accent-bar"></div>
+    <h2>Recent projects</h2>
+    <p class="lead">Trade fairs we have recently worked on, across Europe and Asia.</p>
+    <div class="logos">
+      <div class="logo-card"><div class="mark"><img src="assets/logos/ifco.svg" alt="IFCO – Istanbul Fashion Connection" style="max-height:92px"></div><span>Istanbul · Turkey</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/texhibition.svg" alt="Texhibition Istanbul" style="max-height:66px"></div><span>Istanbul · Turkey</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/bharat-tex.png" alt="Bharat Tex" style="max-height:110px"></div><span>New Delhi · India</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/iigf.png" alt="India International Garment Fair (IGFA)" style="max-height:110px"></div><span>New Delhi · India</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/ailpa.png" alt="AILPA – All India Leather Products & Allied" style="max-height:92px"></div><span>Kolkata · India</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/ready-to-show.png" alt="Ready to Show" style="max-height:96px"></div><span>Milan · Italy</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/apparel-sourcing-tashkent.png" alt="Apparel Sourcing Tashkent" style="max-height:84px"></div><span>Tashkent · Uzbekistan</span></div>
+      <div class="logo-card"><div class="mark"><img src="assets/logos/heimtextil-uzbekistan.png" alt="Heimtextil Uzbekistan" style="max-height:84px"></div><span>Tashkent · Uzbekistan</span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="brand"><img src="assets/logo.png" alt=""></span>
+    <span class="page">06 / 07</span>
+  </div>
+</section>
+
+<!-- 7 · CTA -->
+<section class="slide cta dark">
+  <img class="map-bg" src="assets/poland-cee-map.svg" alt="">
+  <div class="logo-badge"><img src="assets/logo.png" alt="Poland-Importers.com"></div>
+  <div class="inner">
+    <div class="accent-bar"></div>
+    <h2>Ready to sell<br>in <em>Poland?</em></h2>
+    <p>Tell us about your products. We’ll propose the best way to reach buyers in Poland and the CEE region.</p>
+    <div class="contact">
+      <div><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></i>poland-importers.com</div>
+      <div><i><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i>md@poland-importers.com</div>
+      <div><i><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></i>+48 601 080 490</div>
+    </div>
+  </div>
+  <div class="footer"><span>Trade missions · Buyer matching · B2B meetings</span><span class="page">07 / 07</span></div>
+</section>
+
+<script>
+  const n = parseInt(location.hash.slice(1), 10);
+  if (n) {
+    document.body.classList.add("single");
+    document.querySelectorAll(".slide")[n - 1].classList.add("active");
+  }
+</script>
+</body>
+</html>
