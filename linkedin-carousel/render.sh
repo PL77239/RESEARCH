@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Renders slides.html to output/slide-XX.png (1080x1350) and output/poland-importers-carousel.pdf.
+# Renders slides.html to output/slide-XX.png (1080x1350), output/poland-importers-carousel.pdf and the .mp4.
 set -euo pipefail
 
 cd "$(dirname "$0")"
@@ -38,3 +38,5 @@ done
 
 run_chrome output/poland-importers-carousel.pdf --no-pdf-header-footer \
   --print-to-pdf=output/poland-importers-carousel.pdf "$SRC"
+
+./make_video.sh

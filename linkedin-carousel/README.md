@@ -1,9 +1,10 @@
-# Poland-Importers.com – LinkedIn carousel (draft v2)
+# Poland-Importers.com – LinkedIn carousel (draft v3)
 
 B2B carousel presenting the company's core services. Format: 7 slides, 1080×1350 px (4:5, LinkedIn's recommended portrait size).
 
 **Upload to LinkedIn:** create a post → *Add a document* → `output/poland-importers-carousel.pdf`.
-The individual `output/slide-XX.png` files can be used as an image post or for review.
+**Video version:** `output/poland-importers-carousel.mp4` – 30 s, 1080×1350, H.264. Each slide holds for about 4 s with a slow 2% push-in, and slides change with a short dip to dark.
+The individual `output/slide-XX.png` files can be used for review or other channels.
 
 ## Slides
 
@@ -11,14 +12,14 @@ The individual `output/slide-XX.png` files can be used as an image post or for r
 |---|---------|-------|
 | 1 | Cover – "Your gateway to Polish buyers", map of Poland in national colours on the CEE map | – |
 | 2 | About – 25+ years, 40+ countries, 500+ clients, industries, partner countries | – |
-| 3 | 01 · We organize trade missions | Egyptian apparel trade mission (AECE), Warsaw 2025 |
-| 4 | 02 · We find buyers for you | India Footwear & Leather Products Show, Warsaw 2025 |
-| 5 | 03 · We arrange B2B meetings | Business talks during the Egyptian trade mission |
+| 3 | 01 · We organize trade missions | India Footwear & Leather Products Show hall, Warsaw 2025 (client photo) |
+| 4 | 02 · We find buyers for you | AI-generated: team reviewing market-analysis charts (`buyer-research.jpg`) |
+| 5 | 03 · We arrange B2B meetings | AI-generated: handshake at a B2B meeting (`b2b-handshake.jpg`) |
 | 6 | Recent projects – logo wall of 8 trade fairs (see below) | – |
 | 7 | CTA – website, e-mail, phone | – |
 
-All facts and photos come from poland-importers.com (service pages, *About*, *News*, media library).
-Spare photos for later iterations are in `assets/photos/` (show hall, ribbon cutting, Destination Africa, Indian Embassy seminar).
+All facts and the real event photos come from poland-importers.com or the client. The slide 4 and 5 images are AI-generated, show no real people and have no event caption.
+Spare photos for later iterations are in `assets/photos/` (Egyptian trade mission, buyers at the footwear show, ribbon cutting, Destination Africa, Indian Embassy seminar).
 
 ### Trade fair logos (slide 6)
 
@@ -42,7 +43,7 @@ Both Messe Frankfurt logos are shown without the "licensed by Messe Frankfurt Ex
 - Text and layout live in `slides.html` (open it in a browser to preview all slides).
 - Colours come from the logo: navy `#0d4c9a` / `#081f45` plus the orange-red swoosh `#f39200 → #e53517`.
 - Fonts: Montserrat (headings) and Inter (body), bundled in `assets/fonts/` (OFL licence).
-- Re-render PNGs and the PDF (requires Google Chrome / Chromium):
+- Re-render PNGs, the PDF and the MP4 (requires Google Chrome / Chromium and ffmpeg). `./make_video.sh` rebuilds only the video from existing PNGs:
 
 ```bash
 ./render.sh
@@ -59,7 +60,7 @@ Both Messe Frankfurt logos are shown without the "licensed by Messe Frankfurt Ex
 > ✅ Buyer sourcing and matching
 > ✅ B2B meetings with pre-qualified companies
 >
-> Swipe through to see what we do, then send us your product details.
+> See what we do, then send us your product details.
 > 🌐 poland-importers.com
 >
 > #Poland #CEE #Export #TradeMission #B2B #Sourcing #Import
@@ -68,4 +69,3 @@ Both Messe Frankfurt logos are shown without the "licensed by Messe Frankfurt Ex
 
 - Contact details on slide 7: `md@poland-importers.com` (from their Destination Africa flyer) and `+48 601 080 490` (site header).
 - Ideally, get official vector logos for AILPA and Heimtextil Uzbekistan from the organisers. The current files are cropped from their websites.
-- Whether a short animated version (MP4/GIF) is wanted in addition to the carousel.
