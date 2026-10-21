@@ -3,7 +3,7 @@
 B2B carousel presenting the company's core services. Format: 7 slides, 1080×1350 px (4:5, LinkedIn's recommended portrait size).
 
 **Upload to LinkedIn:** create a post → *Add a document* → `output/poland-importers-carousel.pdf`.
-**Video version:** `output/poland-importers-carousel.mp4` – 30 s, 1080×1350, H.264. Each slide holds for about 4 s with a slow 2% push-in, and slides change with a short dip to dark.
+**Video version:** `output/poland-importers-carousel.mp4` – 30 s, 1080×1350, H.264. Each slide is held still for about 4 s, and slides change with a short dip to dark.
 The individual `output/slide-XX.png` files can be used for review or other channels.
 
 ## Slides
@@ -13,12 +13,12 @@ The individual `output/slide-XX.png` files can be used for review or other chann
 | 1 | Cover – "Your gateway to Polish buyers", map of Poland in national colours on the CEE map | – |
 | 2 | About – 25+ years, 40+ countries, 500+ clients, industries, partner countries | – |
 | 3 | 01 · We organize trade missions | India Footwear & Leather Products Show hall, Warsaw 2025 (client photo) |
-| 4 | 02 · We find buyers for you | AI-generated: team reviewing market-analysis charts (`buyer-research.jpg`) |
-| 5 | 03 · We arrange B2B meetings | AI-generated: handshake at a B2B meeting (`b2b-handshake.jpg`) |
+| 4 | 02 · We find buyers for you | AI-generated: team reviewing market-analysis charts (`buyer-research.jpg`, charts only, no people) |
+| 5 | 03 · We arrange B2B meetings | AI-generated: handshake over leather and footwear samples (`b2b-handshake.jpg`) |
 | 6 | Recent projects – logo wall of 8 trade fairs (see below) | – |
 | 7 | CTA – website, e-mail, phone | – |
 
-All facts and the real event photos come from poland-importers.com or the client. The slide 4 and 5 images are AI-generated, show no real people and have no event caption.
+All facts and the real event photos come from poland-importers.com or the client. The slide 4 and 5 images are AI-generated, show no identifiable people and have no event caption.
 Spare photos for later iterations are in `assets/photos/` (Egyptian trade mission, buyers at the footwear show, ribbon cutting, Destination Africa, Indian Embassy seminar).
 
 ### Trade fair logos (slide 6)
