@@ -3,7 +3,7 @@
 B2B carousel presenting the company's core services. Format: 7 slides, 1080×1350 px (4:5, LinkedIn's recommended portrait size).
 
 **Upload to LinkedIn:** create a post → *Add a document* → `output/poland-importers-carousel.pdf`.
-**Video version:** `output/poland-importers-carousel.mp4` – 30 s, 1080×1350, H.264. Each slide is held still for about 4 s, and slides change with a short dip to dark.
+**Video version:** `output/poland-importers-carousel.mp4` – 30 s, 1080×1350, H.264. Each slide is held still for about 4 s while a thin orange-to-red line fills along the bottom edge (timing indicator), and slides change with a short dip to dark.
 The individual `output/slide-XX.png` files can be used for review or other channels.
 
 ## Slides
