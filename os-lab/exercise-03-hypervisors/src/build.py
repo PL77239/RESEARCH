@@ -1,6 +1,6 @@
 """Builds the Exercise 3 report (.docx) from a content module.
 
-Usage: python3 build.py <en|pl> <output.docx>
+Usage: python3 build.py <content_module> <en|pl> <output.docx>
 """
 
 import importlib
@@ -200,8 +200,34 @@ def title_page(doc, tp):
     doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
 
 
-def build(lang, out_path):
-    content = importlib.import_module(f"content_{lang}")
+def compact_header(doc, tp):
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p.paragraph_format.line_spacing = 1.15
+    p.paragraph_format.space_after = Pt(0)
+    for i, (label, value) in enumerate(tp["fields"]):
+        if i:
+            p.add_run().add_break()
+        r = p.add_run(label + ": ")
+        r.bold = True
+        add_rich(p, value)
+
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_before = Pt(14)
+    p.paragraph_format.space_after = Pt(2)
+    p.paragraph_format.line_spacing = 1.15
+    add_rich(p, tp["course"] + " – " + tp["exercise"], size=11)
+
+    p = doc.add_paragraph()
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p.paragraph_format.space_after = Pt(12)
+    p.paragraph_format.line_spacing = 1.15
+    add_rich(p, "**" + tp["title"] + "**", size=16)
+
+
+def build(module, lang, out_path):
+    content = importlib.import_module(module)
     doc = Document()
     setup_styles(doc)
 
@@ -209,7 +235,11 @@ def build(lang, out_path):
     sec.page_height, sec.page_width = Cm(29.7), Cm(21.0)
     for side in ("left_margin", "right_margin", "top_margin", "bottom_margin"):
         setattr(sec, side, Cm(2.5))
-    sec.different_first_page_header_footer = True
+    compact = content.TITLE_PAGE.get("compact", False)
+    if "line_spacing" in content.TITLE_PAGE:
+        for name in ("Normal", "List Bullet", "List Number"):
+            doc.styles[name].paragraph_format.line_spacing = content.TITLE_PAGE["line_spacing"]
+    sec.different_first_page_header_footer = not compact
     fp = sec.footer.paragraphs[0]
     fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
     add_field(fp, "PAGE")
@@ -220,7 +250,7 @@ def build(lang, out_path):
     props.author = ""
     props.language = "pl-PL" if lang == "pl" else "en-GB"
 
-    title_page(doc, content.TITLE_PAGE)
+    (compact_header if compact else title_page)(doc, content.TITLE_PAGE)
 
     fig_dir = HERE.parent / "build"
     for block in content.BODY:
@@ -272,4 +302,4 @@ def build(lang, out_path):
 
 if __name__ == "__main__":
     sys.path.insert(0, str(HERE))
-    build(sys.argv[1], sys.argv[2])
+    build(sys.argv[1], sys.argv[2], sys.argv[3])
