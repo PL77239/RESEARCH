@@ -4,7 +4,9 @@
 
 Prepared for: Council for Leather Exports (CLE)
 
-Prepared by: Poland Importers – Trading and Market Research, poland-importers.com
+Prepared by: Poland Importers – Trading and Market Research
+
+Date: October 2026
 
 ## 1. Subject
 
@@ -16,20 +18,18 @@ Mobilising buyers from Poland to visit BFLEX 2027. Every buyer profile is review
 - Leather accessories: bags, wallets, belts and small leather goods
 - Leather apparel: leather jackets, coats and garments
 
-## 3. Buyers portfolio
+## 3. Type of buyers
 
 **Footwear**
 
-- Footwear retail chains: CCC, Wojas, Kazar, etc.
-- Fashion retail chains: Reserved, Sinsay, Smyk, Big Star, etc.
-- Local brands: Filippo, Api, 7mil, etc.
-- Wholesalers: Grupa Open, Kondor, Hurtownia Anna, etc.
-- Distributors: Robson, Gracie, etc.
-- Producers: Maciejka, Marco, Befado, etc.
+- Footwear retail chains and fashion retail chains
+- Local brands
+- Wholesalers and distributors
+- Producers
 
 **Leather accessories**
 
-- Leather goods retail chains: Wittchen, Ochnik, Puccini, etc.
+- Leather goods retail chains
 - Fashion retail chains and general retailers
 - Brands with e-commerce and boutique retail chains
 - Wholesalers and distributors
@@ -37,8 +37,8 @@ Mobilising buyers from Poland to visit BFLEX 2027. Every buyer profile is review
 
 **Leather apparel**
 
-- Leather goods retail chains: Wittchen, Ochnik, etc.
-- Fashion retail chains: Reserved, Big Star, etc.
+- Leather goods retail chains
+- Fashion retail chains
 - Brands with e-commerce and boutique retail chains
 - Suppliers of promotional and institutional wear
 
