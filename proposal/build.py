@@ -14,19 +14,13 @@ HTML = SRC.with_suffix(".html")
 PDF = SRC.with_suffix(".pdf")
 
 CSS = """
-@page { size: A4; margin: 16mm 15mm; }
-body { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 10pt; color: #1f2933; line-height: 1.45; }
-h1 { font-size: 20pt; color: #7a1f1f; margin: 0 0 4px; }
-h2 { font-size: 13.5pt; color: #7a1f1f; border-bottom: 2px solid #c9a227; padding-bottom: 3px; margin-top: 22px; page-break-after: avoid; }
-h3 { font-size: 11pt; color: #3d2b1f; margin-top: 14px; page-break-after: avoid; }
-table { border-collapse: collapse; width: 100%; margin: 8px 0 12px; font-size: 9pt; page-break-inside: avoid; }
-th { background: #7a1f1f; color: #fff; text-align: left; padding: 5px 6px; }
-td { border-bottom: 1px solid #e3d9cc; padding: 4px 6px; vertical-align: top; }
-tr:nth-child(even) td { background: #faf6f0; }
-pre { background: #faf6f0; border-left: 4px solid #c9a227; padding: 8px 10px; font-size: 9pt; page-break-inside: avoid; }
-hr { border: none; border-top: 1px solid #e3d9cc; margin: 14px 0; }
-ul, ol { padding-left: 20px; }
-li { margin: 2px 0; }
+@page { size: A4; margin: 20mm 20mm; }
+body { font-family: Arial, sans-serif; font-size: 10.5pt; color: #000; line-height: 1.4; }
+h1 { font-size: 14pt; margin: 0 0 6px; }
+h2 { font-size: 11.5pt; margin: 16px 0 6px; page-break-after: avoid; }
+p { margin: 4px 0; }
+ul { padding-left: 20px; margin: 4px 0 8px; }
+li { margin: 1px 0; }
 """
 
 
