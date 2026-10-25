@@ -26,14 +26,13 @@ p { margin: 4px 0; }
 p > strong:only-child { color: #1f3a5f; }
 ul { padding-left: 18px; margin: 3px 0 8px; }
 li { margin: 1px 0; }
-.contact { margin-top: 12px; white-space: nowrap; border-top: 1px solid #c8d1dc; padding-top: 5px;
-           font-size: 8.5pt; color: #666; text-align: center; }
+.logo { display: block; width: 21mm; margin: -4mm 0 3mm auto; }
+.website { margin-top: 14px; border-top: 1px solid #c8d1dc; padding-top: 5px;
+           font-size: 8.5pt; letter-spacing: 0.4px; color: #1f3a5f; text-align: center; }
 """
 
-CONTACT = (
-    "<div class='contact'>Poland Importers – Trading and Market Research · "
-    "Konstancin-Jeziorna, Poland · +48 601 080 490 · poland-importers.com</div>"
-)
+LOGO = "<img class='logo' src='assets/logo.png' alt='Poland Importers'>"
+WEBSITE = "<div class='website'>www.poland-importers.com</div>"
 
 
 def main() -> None:
@@ -41,7 +40,7 @@ def main() -> None:
     HTML.write_text(
         f"<!doctype html><html><head><meta charset='utf-8'>"
         f"<title>BFLEX 2027 – Buyer Mobilisation Proposal – Poland</title>"
-        f"<style>{CSS}</style></head><body>{body}{CONTACT}</body></html>",
+        f"<style>{CSS}</style></head><body>{LOGO}{body}{WEBSITE}</body></html>",
         encoding="utf-8",
     )
     PDF.unlink(missing_ok=True)
