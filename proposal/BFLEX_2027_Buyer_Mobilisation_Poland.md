@@ -46,25 +46,31 @@ Mobilising buyers from Poland to visit BFLEX 2027. Every buyer profile is review
 
 **Initial stage**
 
-- We study the profile of BFLEX exhibitors: product portfolio, price ranges, MOQ and lead time.
-- We prepare a long list and a priority list of Polish buyers for each product group, organised by type of sales channel.
+- We study the profile of BFLEX exhibitors: product portfolio.
+- We prepare a long list and a priority list of Polish buyers for each product group, organised by type of sales channel, on request of CLE.
 - We agree with CLE which buyer groups are the priority and how many buyers to mobilise in each product group.
 - The priority list is agreed first. The long list follows only once the priority list is completed.
 
 **First step: identifying buyers**
 
-- We approach the selected companies by phone and email and present BFLEX and the Indian producers.
-- We check the buyer's interest in Indian production and in visiting the fair.
-- We check whether the exhibitors' portfolio, price levels, MOQ and lead time are acceptable to the buyer.
-- We identify the buyer's real need for a new supplier, such as a gap with a current supplier, the season schedule or new product lines.
-- At this stage we tell the buyer that participation depends on CLE's approval.
+- We prepare a long list of buyers using our own records of Polish buyers across all categories.
+- We carry out additional market research to identify companies outside our own records.
+- We use our contacts with relevant buyers across Europe, excluding the countries listed by CLE.
+- We follow the recommendations of CLE regarding the required countries.
 
-**Second step: shortlisting and sharing profiles with CLE**
+**Second step: we agree on commercial terms with CLE regarding the mobilisation of buyers**
+
+- Commercial terms for us
+- Timeline of work
+- Minimum and maximum number of buyers
+
+**Third step: after agreeing on commercial terms and signing the agreement**
 
 - We shortlist the buyers who are most promising and interested in visiting.
 - We prepare a profile for each shortlisted buyer, in the same format for every buyer, and share it with CLE by email.
 - CLE reviews each profile and replies: approved, rejected or more information needed.
 - We send further profiles until the number agreed for each product group is reached. Some approved buyers are kept as a reserve list.
+- We use the long list to supplement the shortlist if the shortlisted buyers do not meet CLE's expectations.
 - Profiles are shared with the buyer's consent.
 
 Content of the buyer profile:
@@ -76,7 +82,9 @@ Content of the buyer profile:
 - Name and position of the person travelling to the fair
 - Our short comment on why we recommend the buyer
 
-**Third step: after approval**
+Note: buyer profiles are shared only after the contract is signed and the commercial terms are agreed.
+
+**Fourth step: after approval**
 
 - CLE sends the formal invitations to the approved buyers.
 - We confirm each buyer's participation and help with travel and visa arrangements according to CLE's terms.

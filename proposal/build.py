@@ -14,12 +14,12 @@ HTML = SRC.with_suffix(".html")
 PDF = SRC.with_suffix(".pdf")
 
 CSS = """
-@page { size: A4; margin: 16mm 20mm 18mm;
+@page { size: A4; margin: 14mm 20mm 18mm;
         @bottom-center { content: "www.poland-importers.com"; vertical-align: top; padding-top: 3mm;
                          border-top: 1px solid #c8d1dc; margin-top: 2mm;
                          font-family: Calibri, Carlito, Arial, sans-serif; font-size: 8.5pt;
                          letter-spacing: 0.4px; color: #1f3a5f; } }
-body { font-family: Calibri, Carlito, Arial, sans-serif; font-size: 10pt; color: #222; line-height: 1.38; }
+body { font-family: Calibri, Carlito, Arial, sans-serif; font-size: 9.8pt; color: #222; line-height: 1.32; }
 h1 { font-size: 16pt; letter-spacing: 0.5px; color: #1f3a5f; margin: 0 0 4px; }
 h1 + p { font-size: 11pt; margin-bottom: 10px; }
 h1 ~ p:nth-of-type(2), h1 ~ p:nth-of-type(3) { color: #555; margin: 1px 0; }
@@ -27,6 +27,7 @@ h2 { font-size: 11.5pt; color: #1f3a5f; text-transform: uppercase; letter-spacin
      border-bottom: 1px solid #c8d1dc; padding-bottom: 2px; margin: 13px 0 5px; page-break-after: avoid; }
 h2:first-of-type { margin-top: 22px; }
 p { margin: 4px 0; }
+ul + p { margin-top: 6px; margin-bottom: 8px; }
 p > strong:only-child { color: #1f3a5f; }
 ul { padding-left: 18px; margin: 3px 0 8px; }
 li { margin: 1px 0; }
